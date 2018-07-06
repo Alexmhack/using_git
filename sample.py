@@ -1,3 +1,5 @@
+import greeting
+
 print('Python is Versatile')
 
 def greet(name):
@@ -5,3 +7,4 @@ def greet(name):
 
 
 greet('aman')
+greeting.greet('rishabh')
