@@ -133,3 +133,18 @@ command will print the commits that are in between either commits but not in bot
 ```
 git rebase <branch-name>
 ```
+
+the above command is for those cases when we have,
+
+HEAD , MASTER on the last commit
+We have to make some changes in some 5 level before revision
+So, we checkout that commit
+Checkout a new branch
+Commit our changes there
+Checkout the master branch
+Find our changes haven't affected the master branch
+So, we rebase the whole commits after our branch using
+
+```
+git rebase <branch-name>
+```
