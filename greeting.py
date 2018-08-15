@@ -1,5 +1,4 @@
 import os
-from os import path
 
 current = os.getcwd()
 print(current)
