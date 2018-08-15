@@ -148,3 +148,14 @@ So, we rebase the whole commits after our branch using
 ```
 git rebase <branch-name>
 ```
+
+```
+git stash save | git stash pop
+git stash save == git stash
+git stash save | git stash pop --index
+git stash save "save-work" | git stash pop
+git stash save --include-untracked "saving-work" | git stash pop --index | git stash pop
+```
+
+above command will save our non-committed work including untracked files or files that are in staging
+area or index and using stash pop will recover all our work
