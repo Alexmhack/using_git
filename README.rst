@@ -96,3 +96,6 @@ command will print the commits after commit_id_1 till commit_id_2 including comm
 
 When logging commits from an id at top from one parent and at top from second parent will only
 print the commits from the common commit to the commit_id_2
+
+visit [advanced git tutorial](https://realpython.com/advanced-git-for-pythonistas/) for whole 
+tutorial.
