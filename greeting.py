@@ -5,6 +5,7 @@ print(current)
 
 parent = os.path.dirname(current)
 programs = os.path.join(parent, 'python_programs')
+print(programs)
 
 home = os.path.expanduser('~')
 print(home)
