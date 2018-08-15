@@ -87,3 +87,12 @@ now if you want to merge the two branches then first
 
 now look at the git log and you can see the changes from the rishabh_branch in the master branch
 
+# Advanced Features
+double dot notation
+
+git log <commit_id_1>..<commit_id_2>
+
+command will print the commits after commit_id_1 till commit_id_2 including commit_id_2 commit
+
+When logging commits from an id at top from one parent and at top from second parent will only
+print the commits from the common commit to the commit_id_2
