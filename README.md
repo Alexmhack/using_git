@@ -155,7 +155,9 @@ git stash save == git stash
 git stash save | git stash pop --index
 git stash save "save-work" | git stash pop
 git stash save --include-untracked "saving-work" | git stash pop --index | git stash pop
+git stash list
 ```
 
 above command will save our non-committed work including untracked files or files that are in staging
-area or index and using stash pop will recover all our work and we can also name our stash
+area or index and using stash pop will recover all our work and we can also name our stash, stash 
+list returns all the stashes that we have so far
