@@ -156,8 +156,11 @@ git stash save | git stash pop --index
 git stash save "save-work" | git stash pop
 git stash save --include-untracked "saving-work" | git stash pop --index | git stash pop
 git stash list
+git stash show | git stash show stash@{1} | git stash show -p stash@{1}
 ```
 
 above command will save our non-committed work including untracked files or files that are in staging
 area or index and using stash pop will recover all our work and we can also name our stash, stash 
-list returns all the stashes that we have so far
+list returns all the stashes that we have so far. For getting all the information of the files that 
+are in the stash we use the command stash show, mentioning the stash number will show details for 
+that particular stash or we can use -p to see very detailed path info with the changes in each file
