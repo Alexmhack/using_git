@@ -12,3 +12,6 @@ print(home)
 
 def greet(name):
 	print('NAMASTE {}'.format(name))
+
+
+greet('rishabh')

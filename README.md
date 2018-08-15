@@ -148,3 +148,7 @@ So, we rebase the whole commits after our branch using
 ```
 git rebase <branch-name>
 ```
+
+```
+git stash save | git stash pop
+```
