@@ -99,3 +99,9 @@ print the commits from the common commit to the commit_id_2
 
 visit [advanced git tutorial](https://realpython.com/advanced-git-for-pythonistas/) for whole 
 tutorial.
+
+Triple dot notation
+
+git log <commit_id_1>...<commit_id_2>
+
+command will print the commits that are in between either commits but not in both commit ids
