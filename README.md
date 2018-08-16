@@ -195,3 +195,13 @@ git diff HEAD^ HEAD --name-only
 To get all set of changes between the master and any branch say temp then use git diff
 The --name-only option will show you the list of filename that were changed between two commits, but 
 not what changed in those files.
+
+```
+git config --global diff.tool meld
+git config --global difftool.prompt false
+git difftool HEAD^ HEAD
+git difftool stash@{1} | git difftool stash
+```
+
+Difftool launches a seperate window for showing the changes which is much easier to look at than our
+command line interface, you can launch the difftool with the same keyword.
