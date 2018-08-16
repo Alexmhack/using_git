@@ -176,3 +176,9 @@ git diff | git diff --staged
 We can use diff to get the changes that are currently in all the files in the working directory
 The default diff shows all the changes that are unstaged, for getting all the changes in files that 
 are in the staging use the optional --staged
+
+```
+git diff SHA SHA
+```
+
+To compare any two commits in the your repo use the diff with the SHA
