@@ -182,3 +182,16 @@ git diff SHA SHA
 ```
 
 To compare any two commits in the your repo use the diff with the SHA
+
+```
+git diff master temp
+git diff master^ master
+git diff HEAD~3 HEAD
+git diff HEAD~3 HEAD --greeting.py
+git diff HEAD^ HEAD
+git diff HEAD^ HEAD --name-only
+```
+
+To get all set of changes between the master and any branch say temp then use git diff
+The --name-only option will show you the list of filename that were changed between two commits, but 
+not what changed in those files.
