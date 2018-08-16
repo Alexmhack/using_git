@@ -240,3 +240,23 @@ git log --oneline
 
 For showing a short listed details with only the SHA (short) and the commit message, you can use
 the --oneline option along with git log
+
+```
+git rebase -i SHA
+```
+
+Suppose you have added a new feature and in that process you have made a lot of commits and those
+commits appear in the log which belongs to single feature, those commits won't be needed by you in 
+the future and neither by your team members so you can put all those commits inside the single one
+using the rebase -i option, choose the commit from the log above which all the other commits exists
+for your feature and then use it with the above replacing its SHA in the command.
+
+Then you will be given all the log commits in reverse order from bottom to top but not including the
+SHA that was used with the rebase command. There will be instructions given, generally you will pick
+the first commit message that appears for the parent one for feature (which happens to be the commit 
+just after the commit used with the rebase command), then you can either use the full keyword or just
+the short 's' for squasing all the commits under the picked commit.
+
+Save the sublime window (if sublime is set your default editor for git) and git will show you the 
+preview of how your commits will look after rebasing and you can edit them, save and git will rebase 
+all those commits onto the one you picked, git log again and you can see your changes
