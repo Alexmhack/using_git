@@ -16,3 +16,4 @@ def greet(name):
 
 greet('rishabh')
 HOME = os.environ.get('HOME')
+print(HOME)
