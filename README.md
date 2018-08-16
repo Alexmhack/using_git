@@ -285,3 +285,15 @@ echo add-this-line >> file.ext
 
 Using the echo command the two angle brackets we can add the words add-this-line into the file after
 the angle brackets, no need to use the quotes unless you want the quotes in the file itself.
+
+```
+git show-branch master <branch-name>
+on branch master,
+git merge <branch-name>
+```
+
+You can look at the conflicting changes on <branch-name> and master visually
+When merging another branch from the checked out master branch, suppose there is a conflict, git
+tries to automerge but in case of conflicting you can look at the file again which has the conflicts
+and you will find your file divided into two sections, the first section with and, are from HEAD, 
+which in your case is master. The bottom portion, between and <branch-name> are from your branch
