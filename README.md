@@ -168,3 +168,11 @@ that particular stash or we can use -p to see very detailed path info with the c
 
 We can pop the stash into the working directory from the stash list by specifying the stash or we can
 keep our work in stash as well as in the working directory using the stash apply
+
+```
+git diff | git diff --staged
+```
+
+We can use diff to get the changes that are currently in all the files in the working directory
+The default diff shows all the changes that are unstaged, for getting all the changes in files that 
+are in the staging use the optional --staged
