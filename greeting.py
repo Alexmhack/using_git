@@ -10,3 +10,7 @@ print(home)
 
 def greet(name):
 	print('NAMASTE {}'.format(name))
+
+
+SUBLIME = os.environ.get('sublime')
+print(SUBLIME)
