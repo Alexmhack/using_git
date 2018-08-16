@@ -260,3 +260,12 @@ the short 's' for squasing all the commits under the picked commit.
 Save the sublime window (if sublime is set your default editor for git) and git will show you the 
 preview of how your commits will look after rebasing and you can edit them, save and git will rebase 
 all those commits onto the one you picked, git log again and you can see your changes
+
+```
+git revert HEAD | git revert HEAD -n
+```
+
+When you want to remove the changes made from the most recent commit you can revert your HEAD using
+the above command and those changes will be back but the commit history won't change but a new 
+commit message (default) will be added to the log, there is no option to add a message in the 
+revert but you can skip the process of showing the window using the -n.
