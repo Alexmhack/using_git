@@ -279,3 +279,9 @@ This command cleans all the files that are untracked in the working directory
 If you want to delete the files that are in the .gitignore for ignoring you can use -x for that
 For deleting any folders that are ignored, you can include 'd' as in -xd
 
+```
+echo add-this-line >> file.ext
+```
+
+Using the echo command the two angle brackets we can add the words add-this-line into the file after
+the angle brackets, no need to use the quotes unless you want the quotes in the file itself.
