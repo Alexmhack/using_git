@@ -1,3 +1,7 @@
+# Learning git and github
+
+learning the basics and advanced git usage 
+
 make a directory and run command to make the directory a git repository
 
 ```
@@ -205,3 +209,34 @@ git difftool stash@{1} | git difftool stash
 
 Difftool launches a seperate window for showing the changes which is much easier to look at than our
 command line interface, you can launch the difftool with the same keyword.
+
+```
+git commit --amend | git commit --amend -m "commit message"
+```
+
+If you have made some mistakes in the commit message then you can edit the message for that 
+particular commit using the --amend option and this amends should be made only when there are no
+other commits based on this particular commit, then too you should only --amend when the commit is 
+local and not has been pushed to github.
+
+```
+git pull -r
+```
+
+If there are changes in the remote that you want to pull and have in your local repo you will git 
+pull which will merge the changes to the remote branch, git pull -r will rebase your commits on top 
+of the changes that were on the remote.
+
+```
+git rebase -i
+```
+
+There is a -i flag you can add to the rebase command that will put it into interactive mode, this 
+feature lets you have full list of commits before you push them to the remote
+
+```
+git log --oneline
+```
+
+For showing a short listed details with only the SHA (short) and the commit message, you can use
+the --oneline option along with git log
