@@ -269,3 +269,13 @@ When you want to remove the changes made from the most recent commit you can rev
 the above command and those changes will be back but the commit history won't change but a new 
 commit message (default) will be added to the log, there is no option to add a message in the 
 revert but you can skip the process of showing the window using the -n.
+
+```
+git clean | git clean -x | git clean -xd
+```
+
+CAUTION: Use git clean carefully as the actions from clean command are not reversible
+This command cleans all the files that are untracked in the working directory
+If you want to delete the files that are in the .gitignore for ignoring you can use -x for that
+For deleting any folders that are ignored, you can include 'd' as in -xd
+
