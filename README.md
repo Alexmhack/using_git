@@ -279,3 +279,10 @@ This command cleans all the files that are untracked in the working directory
 If you want to delete the files that are in the .gitignore for ignoring you can use -x for that
 For deleting any folders that are ignored, you can include 'd' as in -xd
 
+```
+dir >> file.extension | ls >> file.ext | echo lines-to-add >> file.ext >> echo print-anything-in-cmd
+```
+
+To add a new file in the current directory you can use dir command in windows or ls in git / terminal
+or you can just add a new line using the echo command in the file, do not add quotes in the line 
+unless you want quotes in the file too and mention the file name after two angle brackets
